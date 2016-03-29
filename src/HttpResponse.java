@@ -66,10 +66,8 @@ public class HttpResponse {
 		setContentLength(errorStr.getBytes().length);
 		setContentType(ContentType.HTML);
 		setDate();
-		body = null;
 		body = errorStr.getBytes();
 		
-		System.out.println("Here.....");
 		return this;
 	}
 	
